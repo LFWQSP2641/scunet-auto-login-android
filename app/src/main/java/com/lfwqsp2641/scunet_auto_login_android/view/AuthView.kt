@@ -35,7 +35,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.lfwqsp2641.scunet_auto_login_android.model.AccountConfig
+import com.lfwqsp2641.scunet_auto_login_android.data.model.AccountConfig
 import com.lfwqsp2641.scunet_auto_login_android.viewmodel.AuthViewModel
 import kotlinx.coroutines.launch
 
