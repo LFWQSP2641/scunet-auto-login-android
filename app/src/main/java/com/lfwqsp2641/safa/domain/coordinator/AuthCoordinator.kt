@@ -1,9 +1,9 @@
-package com.lfwqsp2641.scunet_auto_login_android.domain.coordinator
+package com.lfwqsp2641.safa.domain.coordinator
 
 import android.content.Context
-import com.lfwqsp2641.scunet_auto_login_android.infrastructure.AuthStateManager
-import com.lfwqsp2641.scunet_auto_login_android.infrastructure.GoAuthService
-import com.lfwqsp2641.scunet_auto_login_android.infrastructure.WifiConnectionManager
+import com.lfwqsp2641.safa.infrastructure.AuthStateManager
+import com.lfwqsp2641.safa.infrastructure.GoAuthService
+import com.lfwqsp2641.safa.infrastructure.WifiConnectionManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -1,4 +1,4 @@
-package com.lfwqsp2641.scunet_auto_login_android.data.model
+package com.lfwqsp2641.safa.data.model
 
 import java.util.UUID
 

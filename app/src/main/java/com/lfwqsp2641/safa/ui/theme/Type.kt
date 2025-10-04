@@ -1,4 +1,4 @@
-package com.lfwqsp2641.scunet_auto_login_android.ui.theme
+package com.lfwqsp2641.safa.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

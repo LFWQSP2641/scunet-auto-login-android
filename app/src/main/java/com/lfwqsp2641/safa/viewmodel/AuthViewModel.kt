@@ -1,9 +1,9 @@
-package com.lfwqsp2641.scunet_auto_login_android.viewmodel
+package com.lfwqsp2641.safa.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import com.lfwqsp2641.scunet_auto_login_android.data.repository.AccountRepository
-import com.lfwqsp2641.scunet_auto_login_android.data.model.AccountConfig
+import com.lfwqsp2641.safa.data.repository.AccountRepository
+import com.lfwqsp2641.safa.data.model.AccountConfig
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

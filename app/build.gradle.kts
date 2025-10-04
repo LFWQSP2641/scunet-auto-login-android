@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.lfwqsp2641.scunet_auto_login_android"
+    namespace = "com.lfwqsp2641.safa"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.lfwqsp2641.scunet_auto_login_android"
+        applicationId = "com.lfwqsp2641.safa"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

@@ -1,11 +1,11 @@
-package com.lfwqsp2641.scunet_auto_login_android.data.repository
+package com.lfwqsp2641.safa.data.repository
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.lfwqsp2641.scunet_auto_login_android.data.model.AccountConfig
+import com.lfwqsp2641.safa.data.model.AccountConfig
 
 /**
  * 账号配置持久化管理器（单例模式）

@@ -1,4 +1,4 @@
-package com.lfwqsp2641.scunet_auto_login_android
+package com.lfwqsp2641.safa
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,9 +12,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.lfwqsp2641.scunet_auto_login_android.ui.theme.ScunetautologinandroidTheme
-import com.lfwqsp2641.scunet_auto_login_android.view.AuthView
-import com.lfwqsp2641.scunet_auto_login_android.viewmodel.AuthViewModel
+import com.lfwqsp2641.safa.ui.theme.SafaTheme
+import com.lfwqsp2641.safa.view.AuthView
+import com.lfwqsp2641.safa.viewmodel.AuthViewModel
 
 class MainActivity : ComponentActivity() {
     private val authViewModel: AuthViewModel by viewModels()
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ScunetautologinandroidTheme {
+            SafaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Show the form screen created below
                     AuthView(
@@ -33,21 +33,5 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ScunetautologinandroidTheme {
-        Greeting("Android")
     }
 }

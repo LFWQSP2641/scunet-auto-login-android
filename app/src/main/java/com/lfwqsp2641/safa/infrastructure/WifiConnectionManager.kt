@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.lfwqsp2641.scunet_auto_login_android.infrastructure
+package com.lfwqsp2641.safa.infrastructure
 
 import android.content.Context
 import android.net.wifi.WifiManager

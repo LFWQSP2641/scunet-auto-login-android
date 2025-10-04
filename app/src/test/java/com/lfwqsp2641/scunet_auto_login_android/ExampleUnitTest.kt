@@ -1,4 +1,4 @@
-package com.lfwqsp2641.scunet_auto_login_android
+package com.lfwqsp2641.safa
 
 import org.junit.Test
 

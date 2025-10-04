@@ -1,4 +1,4 @@
-package com.lfwqsp2641.scunet_auto_login_android.ui.theme
+package com.lfwqsp2641.safa.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -34,7 +34,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun ScunetautologinandroidTheme(
+fun SafaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
