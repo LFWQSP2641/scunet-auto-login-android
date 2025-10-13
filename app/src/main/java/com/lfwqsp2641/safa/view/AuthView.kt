@@ -8,20 +8,17 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
+import androidx.compose.material3.ExposedDropdownMenuAnchorType
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -36,6 +33,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.lfwqsp2641.safa.data.model.AccountConfig
+import com.lfwqsp2641.safa.ui.icons.AppIcons
 import com.lfwqsp2641.safa.viewmodel.AuthViewModel
 import kotlinx.coroutines.launch
 
@@ -203,7 +201,7 @@ private fun ServiceDropdown(
             },
             colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
             modifier = Modifier
-                .menuAnchor(type = MenuAnchorType.PrimaryNotEditable)
+                .menuAnchor(type = ExposedDropdownMenuAnchorType.PrimaryNotEditable)
                 .fillMaxWidth()
         )
 
@@ -263,7 +261,7 @@ private fun AccountSelector(
                     ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
                 },
                 modifier = Modifier
-                    .menuAnchor(type = MenuAnchorType.PrimaryNotEditable)
+                    .menuAnchor(type = ExposedDropdownMenuAnchorType.PrimaryNotEditable)
                     .fillMaxWidth()
             )
 
@@ -284,14 +282,20 @@ private fun AccountSelector(
         }
 
         IconButton(onClick = onAddAccount) {
-            Icon(Icons.Default.Add, "添加账号")
+            Icon(
+                imageVector = AppIcons.Add,
+                contentDescription = "添加账号"
+            )
         }
 
         IconButton(
             onClick = onDeleteAccount,
             enabled = selectedAccount != null
         ) {
-            Icon(Icons.Default.Delete, "删除账号")
+            Icon(
+                imageVector = AppIcons.Delete,
+                contentDescription = "删除账号"
+            )
         }
     }
 }

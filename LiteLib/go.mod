@@ -2,7 +2,7 @@ module litelib
 
 go 1.25.1
 
-require github.com/LFWQSP2641/scunet-auto-login v0.0.2
+require github.com/LFWQSP2641/scunet-auto-login v0.1.0
 
 require (
 	golang.org/x/mobile v0.0.0-20250911085028-6912353760cf // indirect
